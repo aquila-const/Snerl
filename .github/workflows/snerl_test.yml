@@ -4,9 +4,10 @@ name: CI
 
 # We just need on pull request because there should not be a
 # direct edit to the main branch.
-push:
-  tags:
-    - "*"
+on:
+  push:
+    tags:
+      - "*"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
