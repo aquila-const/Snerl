@@ -25,6 +25,7 @@ jobs:
           # we want to target all json scripts only
           # json:  ./snippets/*.json 
       # Next we build and test the typescript files
+      
       - uses: actions/checkout@v2
       - name: install node v12
         uses: actions/setup-node@v1
@@ -35,4 +36,10 @@ jobs:
       - name: tsc
         uses: icrawl/action-tsc@v1
         #TODO: add typescript test to project and to this CI/CD
+      - name: set up stall
+        uses: HaaLeo/publish-vscode-extension@v1
+        with:
+          pat: ${{ secrets.VS_MARKETPLACE_TOKEN }}
+          registryUrl: https://marketplace.visualstudio.com
+
           
