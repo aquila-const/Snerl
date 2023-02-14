@@ -1,6 +1,6 @@
-# Snerl
+# Snerl 2
 Perl Snippets because I am tired of not having them. Similar to any other snippet library.
-
+This is an updated version from my old account algorithmhash. Which I am trying to gain access to.
 ## Background
 Perl is for anyone who wants more flexibility from a programming language. It isn't dead. Here are some snippets for you to try out or even update if you find them lacking some sort of better code. Whether it be better standards, algorithm implementations etc.
 

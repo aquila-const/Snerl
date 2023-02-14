@@ -1,10 +1,10 @@
 {
-    "name": "snerl",
+    "name": "snerl-2",
     "version": "0.0.1",
     "description": "Perl snippets for quicker project manifestation, an update.",
     "icon": "images/header_camel.png",
     "editor.tabCompletion": "on",
-    "publisher": "aquila",
+    "publisher": "AquilaConst",
     "main": "./out/index.js",
     "repository": {
         "type": "git",
@@ -51,7 +51,7 @@
     },
     "homepage": "https://github.com/aquila-const/Snerl#readme",
     "scripts": {
-        "vscode:prepublish": "yarn run compile",
+        "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
         "watch": "tsc -watch -p ./"
     },
