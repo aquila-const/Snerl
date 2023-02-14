@@ -1,6 +1,6 @@
 {
     "name": "snerl-2",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Perl snippets for quicker project manifestation, an update.",
     "icon": "images/header_camel.png",
     "editor.tabCompletion": "on",
