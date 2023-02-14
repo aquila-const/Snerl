@@ -4,7 +4,9 @@ name: CI
 
 # We just need on pull request because there should not be a
 # direct edit to the main branch.
-on: [pull_request]
+push:
+  tags:
+    - "*"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -25,8 +27,8 @@ jobs:
           # we want to target all json scripts only
           # json:  ./snippets/*.json 
       # Next we build and test the typescript files
+      - name: install node v16
       - uses: actions/checkout@v2
-      - name: install node v12
       - uses: actions/setup-node@v1
         with:
           node-version: 16
